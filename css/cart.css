@@ -1,0 +1,123 @@
+/* Spinner Start */
+.spinner {
+  position: fixed;
+  background: #232f3e;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 1s;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  animation: pulse 1s linear infinite;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 1s linear infinite;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes pulse {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+}
+/* Spinner End */
+body {
+  background-color: #232f3e;
+}
+.table-res {
+  overflow-x: auto;
+}
+.table {
+  min-width: 800px;
+}
+.table td {
+  height: 0;
+}
+.pro-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+.pro-img img {
+  border-radius: 5px;
+  height: 100%;
+}
+.pro-inf {
+  display: flex;
+  flex-direction: column;
+}
+.pro-updates {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.pro-updates input,
+.pro-updates .pro-upd-controls {
+  width: 50%;
+}
+.pro-updates input {
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid #ccc !important;
+  text-align: center;
+}
+.pro-updates input:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.pro-updates .pro-upd-controls .btn {
+  width: 100%;
+  width: 100%;
+  background: white;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}
+.pro-updates .pro-upd-controls .btn:first-child {
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pro-updates .pro-upd-controls .btn:last-child {
+  border-bottom-right-radius: 10px;
+}
+.pro-controls .btn {
+  border-radius: 50%;
+  color: white;
+}

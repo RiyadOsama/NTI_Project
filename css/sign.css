@@ -1,0 +1,37 @@
+body {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #232f3e,
+    #151c25
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #232f3e,
+    #151c25
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 5000px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite DK Loopet", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0000007a;
+}
+ul {
+  list-style: none;
+}
